@@ -14,7 +14,7 @@ const questions = [
         'question': 'What is the name of the computer hacking group that assists Mulder with research?',
         'options': ['The 4 Horsemen', 'Ufologists', 'The Lone Gunmen',
         'The Mr Robots'],
-        'answer': 2
+        'answer': 0
     },
     {
         'question': 'What other actor was considered to play the part of Mulder',
@@ -26,7 +26,7 @@ const questions = [
         'question': 'This present day invention was first found on X Files over a decade before it was released as a product.',
         'options': ['Smart Car', 'Smart Home', 'Smart Watch',
         'DVR'],
-        'answer': 0
+        'answer': 1
     },
     {
         'question': 'This episode was based on the following real life phenomenon...',
@@ -36,7 +36,7 @@ const questions = [
     {
         'question': 'This unknown actor was featured before they became famous...',
         'options': ['James Vanderbeek', 'Jack Black', 'Jason Biggs', 'Don Cheadle'],
-        'answer': 0
+        'answer': 1
     }
 
 ]
