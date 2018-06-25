@@ -1,0 +1,20 @@
+@font-face {
+    font-family: xFiles;
+    src: url(fonts/x-files.ttf);
+}
+
+*{
+    font-family: xFiles;
+}
+
+body{
+    background:url(../images/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display-2, #questions, #score{
+    color: aliceblue !important;
+}
+#questions{
+    margin-top: 5%;
+}

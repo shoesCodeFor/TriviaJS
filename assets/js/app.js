@@ -7,6 +7,8 @@ var qNumber = 0;
 var correct = 0;
 var incorrect = 0;
 var currentQuestion;
+var gameover = false;
+var timerLength = 20;
 
 // Application flow
 // Intro - Switch Backgrounds
@@ -15,7 +17,7 @@ var currentQuestion;
 // User clicks start (startGame) startTimer
 const startGame = ()=>{
     $('#timer').attr('onclick', '');
-    startTimer(30);
+    startTimer(timerLength);
     pickQuestion(); 
 }
 
@@ -39,7 +41,7 @@ const checkAnswer = (num) =>{
     }
     pickQuestion();
     stopCountdown();
-    startTimer(30);
+    startTimer(timerLength);
 }
 
 // If timer runs out or qNum = questions.length end the game and post a summary
@@ -57,7 +59,7 @@ const postQuestion = (qObj) =>{
             let button = $('<button>');
             button.attr({
                 'type':'button',
-                'class':'btn btn-primary btn-lg btn-block answer',
+                'class':'btn btn-outline-secondary btn-lg btn-block answer',
                 'value':index,
                 'onclick':`checkAnswer(${index})`
             });
@@ -74,7 +76,7 @@ const postQuestion = (qObj) =>{
     }
     else{
         console.log('No more questions');
-        stopCountdown();
+        clearInterval(intervalID);
         endGame();
     }
 }
@@ -97,6 +99,10 @@ var startTimer = (length)=>{
             console.log('You\'re out of time!');
             stopCountdown(); 
             timerBtn.html('Time is up!');
+            endGame();
+        }
+        if(gameover){
+            clearInterval(intervalID);
         }
     }, 1000);
 }
@@ -116,6 +122,8 @@ const cycleQuestion = objArray => {
 }
 
 const endGame = ()=>{
+    $('#questions').empty();
+    gameover = true;
     let closingCredits = `
         <h1>Game Over</h1>
         <h2>Number of Questions Answered</h2>
@@ -126,9 +134,8 @@ const endGame = ()=>{
         <h2>Number of Incorrect Answers<h2>
         <h3>${incorrect}</h3>
     `;
-    $('#questions').fadeOut(1000);
-    $('#score').append(closingCredits).fadeIn(1000);
-    stopCountdown();
+    $('#questions').fadeOut(300);
+    $('#score').append(closingCredits).fadeIn(500);
     $('#timer').remove();
 }
 
