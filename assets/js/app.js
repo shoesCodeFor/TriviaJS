@@ -19,6 +19,7 @@ const startGame = ()=>{
     $('#timer').attr('onclick', '');
     startTimer(timerLength);
     pickQuestion(); 
+    $('body').css("background-image", 'url(../images/game-background.jpg)');
 }
 
 // Pick/ Post questions
