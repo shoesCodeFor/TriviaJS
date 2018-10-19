@@ -37,6 +37,21 @@ const questions = [
         'question': 'This unknown actor was featured before they became famous...',
         'options': ['James Vanderbeek', 'Jack Black', 'Jason Biggs', 'Don Cheadle'],
         'answer': 1
+    },
+    {
+        'question': 'What was Scully\'s daughter\'s name?',
+        'options': ['Carol', 'Brenda', 'She never had a daughter', 'Laura'],
+        'answer': 3
+    },
+    {
+        'question': 'How did the lone gunmen meet?',
+        'options': ['They worked together', 'At a trade show', 'They were organized by Mulder', 'At a JFK study group'],
+        'answer': 0
+    },
+    {
+        'question': 'What happened to Sam Mulder',
+        'options': ['She died', 'She was abducted', 'She was taken away by her father', 'SHe ran away from home'],
+        'answer': 2
     }
 
 ]
