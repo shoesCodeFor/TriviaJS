@@ -19,6 +19,7 @@ body{
 }
 .container-fluid{
     background-color: black !important;
+    background:url(../images/game-background.jpg);
 }
 .display-2, #questions, #score{
     color: aliceblue !important;

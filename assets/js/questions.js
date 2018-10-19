@@ -62,6 +62,11 @@ const questions = [
         'question': 'Did Mulder ever have a girlfriend?',
         'options': ['Yes, he was in love with the bug lady.', 'He had no girlfriends.', 'He dated an agent out of the academy.', 'He always secretly dated Scully'],
         'answer': 2
+    },
+    {
+        'question': 'What Breaking Bad actor was in an episode?',
+        'options': ['Brian Cranston', 'Aaron Paul', 'Saul Goodman', 'Taco'],
+        'answer': 2
     }
 
 ]
