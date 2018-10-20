@@ -52,6 +52,16 @@ const questions = [
         'question': 'What happened to Sam Mulder',
         'options': ['She died', 'She was abducted', 'She was taken away by her father', 'SHe ran away from home'],
         'answer': 2
+    },
+    {
+        'question': 'What did Mulder\'s dad do for a living',
+        'options': ['He was a garbage man.', 'He worked for the CIA.', 'He was unemployed.', 'He worked for the FBI.'],
+        'answer': 3
+    },
+    {
+        'question': 'Did Mulder ever have a girlfriend?',
+        'options': ['Yes, he was in love with the bug lady.', 'He had no girlfriends.', 'He dated an agent out of the academy.', 'He always secretly dated Scully'],
+        'answer': 2
     }
 
 ]
