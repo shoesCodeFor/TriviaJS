@@ -113,8 +113,9 @@ const randomNum = max => {
     return Math.floor(Math.random() * max);
 }
 
-const cycleQuestion = objArray => {
-    let question = objArray.shift();
+const cycleQuestion = (qArr) => {
+    let index = qArr.length;
+    let question = qArr.shift();
     console.log(question);
     if(question !== undefined){
         return question;
